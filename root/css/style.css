@@ -21,7 +21,7 @@ header {
 
 }
 
-.fa-solid {
+.fa-bars {
     display: none;
 }
 
@@ -224,7 +224,6 @@ header {
     font-size: 16px;
     text-align: center;
     padding-top: 21px;
-    padding-bottom: 21px;
 }
 
 .circulos {
@@ -437,7 +436,7 @@ footer li:hover {
         display: none;
     }
 
-    .fa-solid {
+    .fa-bars {
         display: block;
 
     }
@@ -506,7 +505,6 @@ footer li:hover {
     .i01 {
         height: 2.3em;
         background-color: #f8ebe7;
-
 
     }
 
