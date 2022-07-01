@@ -152,8 +152,6 @@ header {
     gap: 2%;
 }
 
-
-
 .abajo-derecha p {
 
     color: #B3B2B7;
@@ -187,14 +185,12 @@ header {
 
 }
 
-
 .cuadros-personas {
     display: flex;
     justify-content: space-around;
     position: relative;
     background-color: #FAFAFA;
     margin-top: 4%;
-
 }
 
 .cuadros-personas article {
@@ -211,7 +207,6 @@ header {
     width: 70px;
     top: -35px;
 }
-
 
 
 .cuadros-personas p {
@@ -328,7 +323,6 @@ footer {
     font-size: 16px;
     gap: 10px;
     position: relative;
-
 }
 
 .footer-4 {
