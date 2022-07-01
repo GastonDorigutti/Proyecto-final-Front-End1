@@ -1,32 +1,34 @@
-
-
 /*Hola Profe mis medidas de desktop es de 1920px*/
 
 body {
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Be Vietnam pro', sans-serif;
     background-color: #FFFFFF;
     margin: 0;
     padding: 0;
 }
 
 header {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 13px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
-    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+
 
 }
 
+.fa-solid {
+    display: none;
+}
+
 .barra {
-    width: 33vw;
     display: flex;
+    width: 30vw;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content: space-between;
     color: rgba(36, 46, 82, 1);
     font-weight: bolder;
     font-size: 13px;
@@ -46,26 +48,31 @@ header {
 
 .arriba {
     display: flex;
-    gap: 300px;
-    margin-left: 5%;
-    margin-right: 5%;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 
+.arriba-izquierda {
+    width: 50%;
 
-.titulo h1 {
+}
+
+.arriba-izquierda h1 {
     text-align: left;
     font-size: 58px;
     font-weight: 700;
     color: rgba(35, 44, 80, 1);
+    width: 70%;
 }
 
-.titulo p {
+.arriba-izquierda p {
     text-align: left;
     font-size: 16.56px;
     color: rgba(0, 0, 0, 1);
     font-weight: 500;
-    width: 70%;
+    width: 45%;
     padding-bottom: 4%;
 
 }
@@ -74,15 +81,14 @@ header {
     display: flex;
     gap: 300px;
     margin-top: 130px;
-    margin-left: 5%;
-    margin-right: 5%;
     margin-bottom: 132px;
     justify-content: space-between;
 
 }
 
 .abajo-izquierda {
-    width: 50%;
+    padding: 5%;
+
 }
 
 
@@ -106,8 +112,7 @@ header {
 }
 
 .abajo-derecha {
-    
-    width: 50%;
+
     display: flex;
     font-size: 16px;
     text-align: left;
@@ -120,6 +125,9 @@ header {
     color: rgba(255, 255, 255, 1);
     border-radius: 30px;
     padding: 10px 25px 10px 25px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .i01 {
@@ -149,7 +157,7 @@ header {
 
     color: #B3B2B7;
     width: 70%;
-    padding-left: 13%;
+    padding-left: 10.5%;
 
 }
 
@@ -223,6 +231,10 @@ header {
     padding-bottom: 21px;
 }
 
+.circulos {
+    display: none;
+}
+
 .boton-naranja1 {
     background-color: #F3603B;
     color: #FFFFFF;
@@ -268,15 +280,20 @@ footer {
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-    padding-right: 5%;
-    padding-bottom: 2%;
+    padding: 3% 5%;
+}
+
+.ultima-lista {
+    display: flex;
+    width: 33vw;
+    justify-content: center;
+    gap: 50%;
 }
 
 .footer-1 {
     display: flex;
     flex-direction: column;
     gap: 66px;
-    padding-left: 5%;
 
 }
 
@@ -351,11 +368,15 @@ footer {
 
 .footer-4 p {
     align-self: flex-end;
-    padding-top: 3%;
+    padding-top: 14%;
     font-size: 12.5px;
     color: #8C8C94;
     font-weight: 500;
 
+}
+
+.pie-mobile {
+    display: none;
 }
 
 /* aca empiezo con los efectos visuales de desktop*/
@@ -393,4 +414,224 @@ footer {
 footer li:hover {
     cursor: pointer;
     color: #F3603B;
+}
+
+/* Version Mobile */
+
+@media (max-width: 375px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        padding-top: 8%;
+        padding-bottom: 10%;
+    }
+
+    .graficos img {
+        width: 300px;
+    }
+
+    .barra-navegacion {
+        display: none
+    }
+
+    .boton-naranja {
+        display: none;
+    }
+
+    .fa-solid {
+        display: block;
+
+    }
+
+    .arriba {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .arriba button {
+        display: block;
+        width: 290px;
+    }
+
+    .arriba-izquierda {
+        width: 300px;
+    }
+
+    .arriba-izquierda button {
+        width: 134px;
+        margin-left: 79px;
+    }
+
+    .arriba-izquierda h1 {
+        text-align: center;
+        font-size: 36px;
+        width: 100%;
+        font-weight: bold;
+
+    }
+
+    .abajo-izquierda h2 {
+        text-align: center;
+    }
+
+    .abajo-izquierda p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .arriba-izquierda p {
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .abajo {
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+        gap: 0;
+    }
+
+    .Personas {
+        padding-bottom: 50px;
+    }
+
+    .Personas h3 {
+        font-weight: bold;
+    }
+
+    .i01 {
+        height: 2.3em;
+        background-color: #f8ebe7;
+
+
+    }
+
+    .i02 {
+        height: 2.3em;
+        background-color: #f8ebe7;
+
+    }
+
+    .i03 {
+        height: 2.3em;
+        background-color: #f8ebe7;
+
+    }
+
+    .cuadros-personas {
+        flex-direction: column;
+    }
+
+    .cuadros-personas .anisha {
+
+        display: none;
+    }
+
+    .cuadros-personas .richard {
+        display: none;
+    }
+
+    .cuadros-personas .ali h6 {
+        padding-bottom: 0;
+    }
+    .cuadros-personas .ali p {
+        padding-bottom: 15px;
+    }
+
+    .circulos {
+        display: flex;
+
+    }
+
+    .naranja {
+        flex-direction: column;
+        margin: 0;
+        text-align: start;
+    }
+
+    .texto-naranja {
+        width: 100%;
+        text-align: center;
+    }
+
+    .circulos {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+
+    }
+
+    
+    footer {
+        flex-direction: column-reverse;
+        padding-top: 30px;
+        justify-items: center;
+    
+    }
+
+    .right-reserved {
+        display: none;
+    }
+
+    .footer-1 {
+    flex-direction: column-reverse;
+    gap: 0;
+    justify-content: space-around;
+    
+    }
+
+    .footer-1 img {
+        padding: 5% 15%;
+    }
+
+    .footer-2 {
+        width: 50%;
+    }
+    .footer-3 {
+        width: 50%;
+        padding-right: 30px;
+    }
+
+    .footer-4 {
+        width: 100%;
+    }
+
+
+    .iconos {
+        font-size: 2rem;
+        padding-right: 5%;
+    }
+
+    .ultima-lista {
+        padding-top: 10%;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .pie-mobile {
+        display: block;
+        font-size: 12.5px;
+        color: #8C8C94;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    form .formulario {
+        margin-left: 40px;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+    }
+
 }
